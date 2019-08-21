@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="220.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Pane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="480.0" style="-fx-background-color: #287c8f;">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <children>
+                <Pane layoutX="11.0" layoutY="130.0" prefHeight="60.0" prefWidth="460.0" style="-fx-background-color: #9cafb8;">
+                    <children>
+                        <Button fx:id="restartBut" layoutX="10.0" layoutY="25.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.5" text="Restart" />
+                        <Button fx:id="addBut" layoutX="122.5" layoutY="25.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Add Word" />
+                        <Button fx:id="hintBut" layoutX="235.0" layoutY="25.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.5" text="Hint" />
+                        <Button fx:id="changeBut" layoutX="347.5" layoutY="25.0" mnemonicParsing="false" prefWidth="102.5" text="Change lang" />
+                        <Label fx:id="counterLabel" layoutX="15.0" layoutY="5.0" text="Label" />
+                        <Label fx:id="languageField" layoutX="349.0" layoutY="7.0" text="Label" />
+                    </children>
+                </Pane>
+                <Pane layoutX="11.0" layoutY="8.0" prefHeight="110.0" prefWidth="460.0" style="-fx-background-color: #9cafb8;">
+                    <children>
+                        <Text fx:id="questionField" layoutX="203.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="53.859375">
+                            <font>
+                                <Font name="Georgia" size="20.0" />
+                            </font>
+                        </Text>
+                        <TextField fx:id="answerField" layoutX="87.0" layoutY="64.0" prefHeight="25.0" prefWidth="258.0" />
+                        <Label fx:id="messageField" layoutX="73.0" layoutY="24.0" text="Label" />
+                    </children>
+                </Pane>
+            </children>
+        </Pane>
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+</AnchorPane>
